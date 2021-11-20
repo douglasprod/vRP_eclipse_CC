@@ -23,7 +23,7 @@ File `base.lua`
 MySQL.createCommand("vRP/set_face_fueature_data","REPLACE INTO vrp_user_data(user_id,dkey,dvalue) VALUES(@user_id,@key,@value)")
 ```
 ![image](https://user-images.githubusercontent.com/36680471/142732372-9c1ff446-8602-45b7-b4a7-68f5819cdef6.png)
-
+_________________________________________________________________________________________________________________________________________________
 ```lua
 function vRP.setFaceFeatureData(user_id,key,value)
     MySQL.execute("vRP/set_face_fueature_data", {user_id = user_id, key = key, value = value})
